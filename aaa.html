@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/iconfont_1.css">
+  <link rel="stylesheet" href="./css/iconfont_2.css">
+  <link rel="stylesheet" href="./css/iconfont_3.css">
+  <script>
+    document.documentElement.style.fontSize =
+      document.documentElement.clientWidth / 7.5 + "px"
+  </script>
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .pinglunn {
+      margin-top: 0.4rem;
+    }
+
+    .pinglunn h3 {
+      font-size: 0.1rem;
+      color: #1dcda6;
+      padding-left: 0.3rem;
+      line-height: 0.35rem;
+    }
+
+    .pinglunn .shangjinn {
+      font-size: 0.4rem;
+      color: rgb(54, 54, 54);
+      padding-bottom: 0.3rem;
+      padding-left: 0.3rem;
+    }
+
+    .pinglunn h6 {
+      font-size: 0.25rem;
+      color: rgb(128, 124, 124);
+      padding-left: 0.3rem;
+      padding-right: 0.3rem;
+    }
+
+    .shijiann {
+      width: 7rem;
+      margin: 0 auto;
+      font-size: 12px;
+      color: #c2c2c2;
+      margin-top: 0.3rem;
+      padding-bottom: 0.3rem;
+      border-bottom: 5px solid #eee;
+      display: flex;
+    }
+
+    .jian .iconfont {
+      font-size: 0.12rem;
+      margin-right: 0.1rem;
+    }
+
+    .shijiann .jian {
+      padding-left: 3rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="pinglunn">
+    <h3> <img src="./images/u153111_13.jpg" alt="" width="30px"> 不安海水安彭于晏</h3>
+    <p class="shangjinn">没有上进心我错了吗?</p>
+    <h6>我要自己选择我这一生怎么去唉，更要自己选择我这一生怎么活，一个文明社会就是允许人用任何方式活着。所以，六一儿童节，我想吃棒棒糖就吃帮帮堂，想去游乐场就去游乐场</h6>
+    <div class="shijiann">
+      <span class="shi"> 05-20 20:56</span>
+      <div class="jian">
+        <span class="iconfont icon-xinxi"> <span>7</span> </span>
+        <span class="iconfont icon-xin1"> <span class="dian"> 112</span></span>
+        <span class="iconfont icon-iconset0207">1.8K</span>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+
+  <script>
+    var i = 0
+    var num = document.querySelectorAll(".icon-xin1 .dian")
+    document.querySelector(".icon-xin1").onclick = function () {
+      if (i++ % 2 == 0) {
+        this.style.color = 'red';
+        num++
+      } else {
+        this.style.color = '#c2c2c2';
+        num--
+      }
+    }
+
+  </script>
+</body>
+
+</html>

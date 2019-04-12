@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script>
+    document.documentElement.style.fontSize =
+      document.documentElement.clientWidth / 7.5 + "px"
+  </script>
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/swiper.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .top {
+      background: -webkit-linear-gradient(#0ed3e0, #21f4e1);
+      width: 100%;
+      height: 4rem;
+      position: fixed;
+      top: 0;
+      z-index: 5;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+      box-shadow: darkgrey 5px 2px 30px 3px;
+    }
+
+    header {
+      margin-top: 4rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .footer {
+      width: 100%;
+      height: 1.5rem;
+      position: fixed;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      background-color: white;
+    }
+
+    .footer img {
+      margin-left: 0.65rem;
+      margin-right: 0.2rem;
+      width: 0.5rem;
+    }
+
+    .tianjiahaoyou {
+      display: block;
+      font-size: 0.3rem;
+      text-decoration: none;
+      height: 0.5rem;
+      justify-content: flex-start;
+      color: rgb(235, 229, 229);
+      margin-top: 0.5rem;
+      float: left;
+      padding-left: 0.3rem;
+    }
+
+    .wo {
+      display: block;
+      font-size: 0.3rem;
+      text-decoration: none;
+      color: white;
+      height: 0.5rem;
+      margin-top: 0.5rem;
+      padding-left: 2rem;
+      float: left;
+    }
+
+    .shezi {
+      display: block;
+      font-size: 0.3rem;
+      text-decoration: none;
+      color: rgb(235, 229, 229);
+      height: 0.5rem;
+      margin-top: 0.5rem;
+      float: right;
+      padding-right: 0.3rem;
+    }
+
+    .top img {
+      margin-left: -3rem;
+      margin-bottom: -1.7rem;
+    }
+
+    .top h4 {
+      font-size: 0.3rem;
+      padding-left: 2.2rem;
+      padding-top: 0.4rem;
+      color: white;
+    }
+
+    .top p {
+      font-size: 0.2rem;
+      padding-left: 2.2rem;
+      padding-top: 0.1rem;
+      color: rgb(138, 133, 133);
+    }
+
+    .huida {
+      width: 1.4rem;
+      height: 0.8rem;
+      float: left;
+      text-align: center;
+      padding-top: 0.5rem;
+      color: rgb(97, 94, 94);
+      margin-left: 0.8rem;
+    }
+
+    .huida h6 {
+      width: 1.4rem;
+      font-size: 0.3rem;
+      float: left;
+      display: block;
+      text-align: center;
+    }
+
+    .huida span {
+      width: 1.4rem;
+      font-size: 0.1rem;
+      float: left;
+      text-align: center;
+    }
+
+    .wodeyichu {
+      font-size: 0.3rem;
+      padding-top: 0.3rem;
+
+    }
+
+    .wodeyichu a {
+      text-decoration: none;
+      float: right;
+      display: block;
+      font-size: 0.4rem;
+      padding-right: 0.3rem;
+      color: black;
+    }
+
+    .swiper-container {
+      width: 100%;
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    .swiper-container {
+      margin: 0 auto;
+    }
+
+    .swiper-slide p {
+      font-size: 0.3rem;
+      float: left;
+    }
+
+    .lunbo {
+      width: 100%;
+      padding-bottom: 0.1rem;
+      border-bottom: 10px solid #fbfbfb;
+    }
+
+    .lunbo-top {
+      width: 7rem;
+      margin: 0 auto;
+
+    }
+
+    .shouchang {
+      width: 100%;
+      padding-left: 0.5rem;
+      line-height: 0.75rem;
+      border-bottom: 10px solid #fbfbfb;
+    }
+
+
+
+    .shouchang p {
+      font-size: 0.4rem;
+      border-bottom: 1px solid #fbfbfb;
+      vertical-align: middle;
+    }
+
+    .shouchang p img {
+      width: 0.5rem;
+      vertical-align: middle;
+    }
+
+    .shouchang p button {
+      background-color: white;
+      border: 1px solid white;
+      font-size: 0.4rem;
+      outline: 0;
+      vertical-align: middle;
+    }
+
+    .shouchang p span {
+      font-size: 0.2rem;
+      color: rgb(163, 163, 163);
+      vertical-align: middle;
+      line-height: 0.75rem;
+    }
+
+    .shouchang p a {
+      float: right;
+      text-decoration: none;
+      font-size: 0.3rem;
+      color: black;
+      line-height: 0.75rem;
+      padding-right: 0.2rem;
+    }
+
+    .swiper-container>.swiper-wrapper>.swiper-slide>img {
+      width: 2rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="top">
+      <a href="" class="tianjiahaoyou">添加好友</a>
+      <a href="" class="wo">我</a>
+      <a href="" class="shezi">设置</a>
+      <img src="./images/gerenye.png" alt="" width="60px">
+      <h4>四万温泉</h4>
+      <p>简介：正在努力的变得更好</p>
+      <div class="huida">
+        <h6> 836</h6> <span>我的回答</span>
+      </div>
+      <div class="huida">
+        <h6> 540</h6><span>我关注的人</span>
+      </div>
+      <div class="huida">
+        <h6> 240</h6><span>关注我的人</span>
+      </div>
+    </div>
+    <header>
+      <div class="lunbo">
+        <div class="lunbo-top">
+          <p class="wodeyichu">我的一处 <a href="">...</a></p>
+
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./images/12_03.png" alt="">
+                <p>一粒</p>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/13_03.png" alt="">
+                <p>6/12</p>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/11_03.png" alt="">
+                <p>7/15</p>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/13_03.png" alt="">
+                <p>岁月</p>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/11_03.png" alt="">
+                <p>岁月</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="shouchang">
+        <p> <img src="./images/个人页_03.png" alt="">
+          <button>收藏</button>
+
+          <span> 文章 歌曲精彩回答都在这里了</span>
+          <a href="">32></a>
+        </p>
+        <p><img src="./images/个人页_07.png" alt="">
+          <button>回信</button>
+
+          <span> 你的回答</span>
+          <a href="">7个></a>
+        </p>
+      </div>
+      <div class="shouchang">
+        <p> <img src="./images/个人页_10.png" alt="">
+          <button>提问</button>
+
+          <span>你的提问</span>
+          <a href="">6个></a>
+        </p>
+        <p><img src="./images/个人页_13.png" alt="">
+          <button>钱包</button>
+
+          <span>邀请好友来拿钱</span>
+          <a href="">50.00></a>
+        </p>
+      </div>
+      <div class="shouchang">
+        <p> <img src="./images/个人页_03.png" alt="">
+          <button>收藏</button>
+
+          <span> 文章 歌曲精彩回答都在这里了</span>
+          <a href="">32></a>
+        </p>
+        <p><img src="./images/个人页_07.png" alt="">
+          <button>回信</button>
+
+          <span> 你的回答</span>
+          <a href="">7个></a>
+        </p>
+      </div>
+    </header>
+    <div class="footer">
+      <img src="images/u39.png" alt="" class="shouye">
+      <img src="images/u45.png" alt="" class="xiaoxi">
+      <img src="images/u37.png" alt="">
+      <img src="images/u41.png" alt="" class="huati">
+      <img src="images/u43_disabled.png" alt="">
+    </div>
+  </div>
+
+  <script src="./js/swiper.animate1.0.3.min.js"></script>
+  <script src="./js/swiper.min.js"></script>
+  <script>
+    var mySwiper = new Swiper('.swiper-container', {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    })
+    document.querySelector(".footer>.shouye").onclick = function () {
+      window.location.href = 'dengruye.html';
+    }
+    document.querySelector(".footer>.xiaoxi").onclick = function () {
+      window.location.href = 'xiaoxi.html';
+    }
+    document.querySelector(".footer>.huati").onclick = function () {
+      window.location.href = 'huati.html';
+    }
+  </script>
+</body>
+
+</html>
